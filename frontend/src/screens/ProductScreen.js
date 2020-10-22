@@ -1,10 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Roc, Col, Image, ListGroup, Card, Button } from 'react-bootstrap';
+import Rating from '../components/Rating';
+import products from '../prodycts';
 
-const ProductScreen = () => {
+const ProductScreen = ({ match }) => {
+    const product = products.find(p => p._id === match.params.id)
     return (
-        <div>
-            Product
-        </div>
+        <>
+            <Link className='btn btn-dark my-3' to='/'>Go Back</Link>
+        </>
     )
 }
 
