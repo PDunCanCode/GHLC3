@@ -16,7 +16,8 @@ router.get('/', asyncHandler(async (req, res) => {
 // @desc Fetch Single Products
 //@route GET /api/products/:id
 //@access Public Route
-router.get('/:id', asayncHandler(async(req, res) => {
+router.get(
+    '/:id', asyncHandler(async(req, res) => {
     const product = await Product.findById(req.params.id)
 
     if(product){
