@@ -15,9 +15,7 @@ const HomeScreen = ({}) => {
   useEffect(() => {
     dispatch(listProducts());
   }, [dispatch]);
-
-  const products = [];
-
+  // eslint-disable-next-line
   return (
     <>
       <h1>Latest Products</h1>

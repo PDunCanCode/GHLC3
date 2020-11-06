@@ -98,7 +98,7 @@ const CartScreen = ({ match, location, history }) => {
                 .reduce((acc, item) => acc + item.qty * item.price, 0)
                 .toFixed(2)}
             </ListGroup.Item>
-            <ListGroupItem>
+            <ListGroup.Item>
               <Button
                 type="button"
                 className="btn-block"
@@ -107,7 +107,7 @@ const CartScreen = ({ match, location, history }) => {
               >
                 Proceed To Checkout
               </Button>
-            </ListGroupItem>
+            </ListGroup.Item>
           </ListGroup>
         </Card>
       </Col>
