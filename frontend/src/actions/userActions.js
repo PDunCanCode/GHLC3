@@ -1,6 +1,9 @@
 import Axios from "axios";
 import { PRODUCT_LIST_FAIL } from "../constants/productConstants";
-import { USER_LOGIN_REQUEST } from "../constants/userConstants";
+import {
+  USER_LOGIN_REQUEST,
+  USER_LOGIN_FAIL,
+} from "../constants/userConstants";
 
 export const login = (email, password) => async (dispatch) => {
   try {
